@@ -1,0 +1,15 @@
+@import './styles/_colors.scss';
+
+.btn {
+	border: none;
+	border-radius: 0;
+	background-color: $royalblue;
+	padding: 0 50px;
+	color: white;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 700;
+}

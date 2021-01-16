@@ -1,15 +1,63 @@
 @import './styles/_colors.scss';
 
+@mixin backgroundColor($baseColor) {
+	background-color: $baseColor;
+	transition: background-color .2s;
+
+	&:hover {
+		background-color: lighten($baseColor, 5%);
+	}
+}
+
 .btn {
-	border: none;
-	border-radius: 0;
-	background-color: $royalblue;
-	padding: 0 50px;
-	color: white;
-	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: none;
+	border-radius: 0;
+	padding: 0 50px;
+	height: 60px;
 	font-size: 18px;
 	font-weight: 700;
+	cursor: pointer;
+}
+
+.contained {
+	color: $white;
+
+	&.royal-blue {
+		@include backgroundColor($royalblue);
+	}
+
+	&.dark-navy {
+		@include backgroundColor($darknavy);
+	}
+
+	&.emerald {
+		@include backgroundColor($emerald);
+	}
+}
+
+.outlined {
+	background-color: $white;
+	transition: background-color .2s;
+
+	&.royal-blue {
+		border: 1px solid $royalblue;
+		color: $royalblue;
+	}
+
+	&.dark-navy {
+		border: 1px solid $darknavy;
+		color: $darknavy;
+	}
+
+	&.emerald {
+		border: 1px solid $emerald;
+		color: $emerald;
+	}
+
+	&:hover {
+		background-color: darken($white, 5%);
+	}
 }

@@ -1,3 +1,134 @@
+@import './styles/_colors.scss';
+
 .text {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Colors
+.inherit-color {
+	color: inherit;
+}
+
+.white {
+	color: $white;
+}
+
+.off-white {
+	color: $offwhite;
+}
+
+.lighter-gray {
+	color: $lightergray;
+}
+
+.light-gray {
+	color: $lightgray;
+}
+
+.gray {
+	color: $gray;
+}
+
+.dark-gray {
+	color: $darkgray;
+}
+
+.darker-gray {
+	color: $darkergray;
+}
+
+.almost-black {
+	color: $almostblack;
+}
+
+.black {
+	color: $black;
+}
+
+.royal-blue {
+	color: $royalblue;
+}
+
+.emerald {
+	color: $emerald;
+}
+
+.dark-navy {
+	color: $darknavy;
+}
+
+// Font
+.inherit-font {
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-transform: inherit;
+}
+
+.light,
+.all-caps-light {
+	font-weight: 300;
+}
+
+.regular,
+.all-caps-regular {
+	font-weight: 400;
+}
+
+.bold,
+.all-caps-bold {
+	font-weight: 700;
+}
+
+.all-caps-light,
+.all-caps-regular,
+.all-caps-bold {
+	text-transform: uppercase;
+}
+
+// Size
+.inherit-size {
+	font-size: inherit;
+}
+
+.default {
+	font-size: 16px;
+}
+
+.small {
+	font-size: 10px;
+}
+
+.medium {
+	font-size: 18px;
+}
+
+.large {
+	font-size: 28px;
+}
+
+.heading-1 {
+	font-size: 28px;
+}
+
+.heading-2 {
 	font-size: 24px;
+}
+
+.heading-3 {
+	font-size: 20px;
+}
+
+.heading-4 {
+	font-size: 16px;
+}
+
+.heading-5 {
+	font-size: 14px;
 }

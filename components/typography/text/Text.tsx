@@ -64,7 +64,7 @@ const Text: React.FC<TextProps> = ({
 	const Tag = tag as keyof JSX.IntrinsicElements;
 
 	const composed_classname = classnames(
-		styles('text', ),
+		styles('text', color, font, size),
 		className,
 	);
 

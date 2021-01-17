@@ -18,8 +18,10 @@ storiesOf('typography/text', module)
 			<Text
 				tag={text('tag', 'p')}
 				font={select('font', FontStates, FontStates.REGULAR)}
+				color={select('color', ColorStates, ColorStates.ALMOST_BLACK)}
+				size={select('size', SizeStates, SizeStates.MEDIUM)}
 			>
-				Get started with MainStreet
+				{text('text', 'Get started with MainStreet')}
 			</Text>
 		);
 	});

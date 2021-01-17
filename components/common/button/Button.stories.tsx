@@ -8,7 +8,7 @@ import Button, {
 	VariantStates
 } from './Button';
 
-storiesOf('Button', module)
+storiesOf('common/button', module)
 	.addDecorator(withKnobs({
 		escapeHTML: false,
 	}))

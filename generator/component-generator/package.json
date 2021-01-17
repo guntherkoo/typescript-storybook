@@ -1,0 +1,25 @@
+{
+  "name": "component-generator",
+  "version": "1.0.0",
+  "description": "A Yeoman generator for component library",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guntherkoo/component-library"
+  },
+  "files": [
+    "component"
+  ],
+  "bin": {
+    "scaffold-component": "./scaffold_component.js"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Gunther Koo",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-rename": "1.2.2",
+    "yeoman-environment": "2.10.3",
+    "yeoman-generator": "4.10.1"
+  }
+}

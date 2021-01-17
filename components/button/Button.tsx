@@ -5,6 +5,11 @@ import _styles from './Button.scss';
 
 const styles = classnames.bind(_styles);
 
+export enum SizeStates {
+	SMALL = 'small',
+	MEDIUM = 'medium',
+	LARGE = 'large',
+}
 
 export enum ColorStates {
 	ROYAL_BLUE = 'royal-blue',
@@ -19,21 +24,23 @@ export enum VariantStates {
 
 type ButtonProps = {
 	className?: string,
-	color: ColorStates,
 	text: string,
 	ariaLabel: string,
-	variant: VariantStates,
+	color?: ColorStates,
+	size?: SizeStates,
+	variant?: VariantStates,
 };
 
 const Button: React.FC<ButtonProps> = ({
 	className,
+	ariaLabel,
 	color,
 	text,
-	ariaLabel,
+	size,
 	variant,
 }) => {
 	const composed_classname = classnames(
-		styles('btn', color, variant),
+		styles('btn', color, variant, size),
 		className,
 	);
 
@@ -47,5 +54,11 @@ const Button: React.FC<ButtonProps> = ({
 		</button>
 	);
 };
+
+Button.defaultProps = {
+	size: SizeStates.MEDIUM,
+	color: ColorStates.DARK_NAVY,
+	variant: VariantStates.CONTAINED,
+}
 
 export default Button;

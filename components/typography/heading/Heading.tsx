@@ -91,12 +91,12 @@ const getTextPropsByWeight = weight => {
 	}
 }
 
-type HeadingProps = {
-	className?: string,
-	children: React.ReactNode,
-	weight?: WeightStates,
-	color?: ColorStates,
-	tag?: keyof JSX.IntrinsicElements,
+interface HeadingProps {
+	className?: string;
+	children: React.ReactNode;
+	weight?: WeightStates;
+	color?: ColorStates;
+	tag?: keyof JSX.IntrinsicElements;
 };
 
 const Heading: React.FC<HeadingProps> = ({

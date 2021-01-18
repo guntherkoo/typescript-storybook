@@ -5,9 +5,9 @@ import _styles from './<%= component_name %>.scss';
 
 const styles = classnames.bind(_styles);
 
-type <%= component_name %>Props = {
-	className?: string,
-	text: string,
+interface <%= component_name %>Props {
+	className?: string;
+	text: string;
 };
 
 const <%= component_name %>: React.FC<<%= component_name %>Props> = ({

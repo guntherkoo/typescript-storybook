@@ -22,13 +22,13 @@ export enum VariantStates {
 	CONTAINED = 'contained',
 };
 
-type ButtonProps = {
-	className?: string,
-	text: string,
-	ariaLabel: string,
-	color?: ColorStates,
-	size?: SizeStates,
-	variant?: VariantStates,
+interface ButtonProps {
+	className?: string;
+	text: string;
+	ariaLabel: string;
+	color?: ColorStates;
+	size?: SizeStates;
+	variant?: VariantStates;
 };
 
 const Button: React.FC<ButtonProps> = ({

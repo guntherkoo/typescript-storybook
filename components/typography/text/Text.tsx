@@ -44,13 +44,13 @@ export enum SizeStates {
 	HEADING_5 = 'heading-5',
 };
 
-type TextProps = {
-	className?: string,
-	children: React.ReactNode,
-	color?: ColorStates,
-	font?: FontStates,
-	size?: SizeStates,
-	tag?: keyof JSX.IntrinsicElements,
+interface TextProps {
+	className?: string;
+	children: React.ReactNode;
+	color?: ColorStates;
+	font?: FontStates;
+	size?: SizeStates;
+	tag?: keyof JSX.IntrinsicElements;
 };
 
 const Text: React.FC<TextProps> = ({

@@ -26,18 +26,22 @@ interface ButtonProps {
 	className?: string;
 	text: string;
 	ariaLabel: string;
+	disabled?: boolean;
 	color?: ColorStates;
 	size?: SizeStates;
 	variant?: VariantStates;
+	onClick: () => void;
 };
 
 const Button: React.FC<ButtonProps> = ({
 	className,
 	ariaLabel,
+	disabled,
 	color,
 	text,
 	size,
 	variant,
+	onClick,
 }) => {
 	const composed_classname = classnames(
 		styles('btn', color, variant, size),
@@ -49,6 +53,8 @@ const Button: React.FC<ButtonProps> = ({
 			type='button'
 			className={composed_classname}
 			aria-label={ariaLabel}
+			onClick={onClick}
+			disabled={disabled}
 		>
 			{text}
 		</button>

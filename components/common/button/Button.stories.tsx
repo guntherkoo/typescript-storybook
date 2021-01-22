@@ -8,6 +8,10 @@ import Button, {
 	VariantStates
 } from './Button';
 
+const handleOnClick = () => {
+	alert('You clicked the button!');
+};
+
 storiesOf('common/button', module)
 	.addDecorator(withKnobs({
 		escapeHTML: false,
@@ -18,6 +22,7 @@ storiesOf('common/button', module)
 			<Button
 				text={text('text', 'MainStreet')}
 				ariaLabel={text('aria-label', 'Default Button')}
+				onClick={() => handleOnClick()}
 			/>
 		);
 	})
@@ -29,6 +34,7 @@ storiesOf('common/button', module)
 				color={select('color', ColorStates, ColorStates.ROYAL_BLUE)}
 				variant={select('variant', VariantStates, VariantStates.CONTAINED)}
 				size={select('size', SizeStates, SizeStates.SMALL)}
+				onClick={() => handleOnClick()}
 			/>
 		);
 	})
@@ -40,6 +46,7 @@ storiesOf('common/button', module)
 				color={select('color', ColorStates, ColorStates.ROYAL_BLUE)}
 				variant={select('variant', VariantStates, VariantStates.OUTLINED)}
 				size={select('size', SizeStates, SizeStates.LARGE)}
+				onClick={() => handleOnClick()}
 			/>
 		);
 	});

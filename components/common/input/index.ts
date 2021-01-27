@@ -1,1 +1,4 @@
-export { default } from './Input';
+export {
+    default,
+    TypeState,
+} from './Input';

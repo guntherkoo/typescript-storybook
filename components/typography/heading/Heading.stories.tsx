@@ -18,7 +18,7 @@ storiesOf('typography/heading', module)
 	.add('default', () => {
 		return (
 			<Heading
-				tag={text('tag', 'h1')}
+				tag='h1'
 				weight={select('weight', WeightStates, WeightStates.H1)}
 				color={select('color', HeadingColorStates, HeadingColorStates.DARK_NAVY)}
 			>

@@ -59,7 +59,7 @@ const Input: React.FC<InputProps> = ({
 				value={value}
 				onFocus={() => setOnFocus(true)}
 				onBlur={() => setOnFocus(false)}
-				onChange={e => onChange(e)}
+				onChange={() => onChange(value)}
 			/>
 		</div>
 	)

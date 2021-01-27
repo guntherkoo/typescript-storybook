@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import centered from '@storybook/addon-centered/react';
-import { withKnobs, text, select, color } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 import Button, {
 	SizeStates,
@@ -47,6 +47,19 @@ storiesOf('common/button', module)
 				variant={select('variant', VariantStates, VariantStates.OUTLINED)}
 				size={select('size', SizeStates, SizeStates.LARGE)}
 				onClick={() => handleOnClick()}
+			/>
+		);
+	})
+	.add('disabled', () => {
+		return (
+			<Button
+				text={text('text', 'MainStreet')}
+				ariaLabel={text('aria-label', 'Disabled Button')}
+				color={select('color', ColorStates, ColorStates.ROYAL_BLUE)}
+				variant={select('variant', VariantStates, VariantStates.CONTAINED)}
+				size={select('size', SizeStates, SizeStates.LARGE)}
+				onClick={() => handleOnClick()}
+				disabled={boolean('disabled', true)}
 			/>
 		);
 	});

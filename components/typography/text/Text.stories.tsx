@@ -16,7 +16,7 @@ storiesOf('typography/text', module)
 	.add('default', () => {
 		return (
 			<Text
-				tag={text('tag', 'p')}
+				tag='p'
 				font={select('font', FontStates, FontStates.REGULAR)}
 				color={select('color', ColorStates, ColorStates.ALMOST_BLACK)}
 				size={select('size', SizeStates, SizeStates.MEDIUM)}

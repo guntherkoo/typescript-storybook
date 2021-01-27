@@ -1,1 +1,4 @@
-export { default } from './Heading';
+export {
+    default,
+    WeightStates,
+} from './Heading';

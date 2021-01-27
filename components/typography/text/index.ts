@@ -1,1 +1,6 @@
-export { default } from './Text';
+export {
+    default,
+    ColorStates,
+    FontStates,
+    SizeStates,
+} from './Text';

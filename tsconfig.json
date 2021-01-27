@@ -19,6 +19,6 @@
       "@components/*": ["./components/*"]
     }
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", "generator"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

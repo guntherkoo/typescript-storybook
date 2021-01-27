@@ -4,7 +4,7 @@ import Text, {
 	FontStates,
 	ColorStates,
 	SizeStates,
-} from '../text/Text';
+} from '../text';
 
 import _styles from './Heading.scss';
 

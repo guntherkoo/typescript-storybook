@@ -1,1 +1,6 @@
-export * from './Button';
+export {
+    default,
+    SizeStates,
+    ColorStates,
+    VariantStates,
+} from './Button';

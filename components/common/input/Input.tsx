@@ -17,7 +17,7 @@ interface InputProps {
 	type: string;
 	label: string;
 	value: string;
-	onChange: (value: string) => void;
+	onChange(value: string): void;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -39,13 +39,16 @@ const Input: React.FC<InputProps> = ({
 		}
 	}, [onFocus]);
 
+	const composed_classname = classnames(
+		styles('container', {
+			'focused': onFocus,
+			'filled': isFilled,
+		}),
+		className,
+	);
+
 	return (
-		<div
-			className={styles('container', {
-				'focused': onFocus,
-				'filled': isFilled,
-			})}
-		>
+		<div className={composed_classname}>
 			<label
 				htmlFor={name}
 			>
@@ -59,7 +62,7 @@ const Input: React.FC<InputProps> = ({
 				value={value}
 				onFocus={() => setOnFocus(true)}
 				onBlur={() => setOnFocus(false)}
-				onChange={() => onChange(value)}
+				onChange={e => onChange(e.target.value)}
 			/>
 		</div>
 	)

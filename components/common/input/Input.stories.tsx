@@ -14,11 +14,7 @@ storiesOf('common/input', module)
 	.addDecorator(centered)
 	.add('default', () => {
 		const [value, setValue] = useState('');
-
-		const onChange = e => {
-			const new_value = e.target.value;
-			setValue(new_value);
-		}
+		const onChange = (value: string) => setValue(value);
 
 		return (
 			<Input

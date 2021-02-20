@@ -1,0 +1,21 @@
+/*  imported from Input.scss  */
+
+.Input__container___16lrW{display:flex;align-items:center;position:relative;border:1px solid #aaa;transition:border .2s}
+
+.Input__container___16lrW label{position:absolute;top:15px;left:10px;font-size:16px;padding:0 5px;color:#999;background-color:transparent;transform:translate3d(0, 0, 0) scale(1);transition:transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),background-color 0.4s,color 0.4s}
+
+.Input__container___16lrW input{color:#022435;border:0;font-size:16px;padding:15px}
+
+.Input__container___16lrW input::placeholder{color:#aaa;opacity:0;font-size:16px;transition:opacity .4s}
+
+.Input__container___16lrW input:focus{outline:none}
+
+.Input__container___16lrW:hover{border:1px solid #022435}
+
+.Input__container___16lrW.Input__filled___1Dgjg label{color:#999;background-color:white;transform:translate3d(-7px, -24px, 0) scale(0.8)}
+
+.Input__container___16lrW.Input__focused___2wXOh{border:1px solid #022435}
+
+.Input__container___16lrW.Input__focused___2wXOh label{color:#022435;background-color:white;transform:translate3d(-7px, -24px, 0) scale(0.8)}
+
+.Input__container___16lrW.Input__focused___2wXOh input::placeholder{opacity:1}

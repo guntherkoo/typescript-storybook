@@ -60,7 +60,7 @@
           "transform-rename-import",
           {
             "original": "^(.+?)\\.scss$",
-            "replacement": "$1.module.scss",
+            "replacement": "$1.css",
           }
         ],
         "@babel/plugin-proposal-class-properties",
@@ -69,29 +69,6 @@
       ]
     },
     "dist": {
-      // "presets": [
-      //   [
-      //     "@babel/preset-env",
-      //     {
-      //       "targets": {
-      //         "node": "current",
-      //         "android": "4.2",
-      //         "chrome": "58",
-      //         "edge": "12",
-      //         "firefox": "52",
-      //         "ie": "11",
-      //         "ios": "8",
-      //         "safari": "9.0",
-      //         //"esmodules": true,
-      //       },
-      //       "useBuiltIns": "usage",
-      //       "corejs": 3,
-      //       "debug": true,
-      //       "modules": false,
-      //     },
-      //   ],
-      //   "@babel/preset-react",
-      // ],
       "presets": [
         [
           "@babel/preset-env",
@@ -119,7 +96,7 @@
             "extractCss": {
               "dir": "./dist",
               "relativeRoot": "./components",
-              "filename": "[path]/[name].scss",
+              "filename": "[path]/[name].css",
             },
           }
         ],

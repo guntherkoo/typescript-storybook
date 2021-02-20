@@ -1,0 +1,37 @@
+/*  imported from Button.scss  */
+
+.Button__btn___2qvB4{display:flex;align-items:center;justify-content:center;border:none;border-radius:0;font-weight:700;cursor:pointer}
+
+.Button__btn___2qvB4:focus{outline:none}
+
+.Button__btn___2qvB4:disabled{pointer-events:none;opacity:.5}
+
+.Button__small___3auHM{font-size:14px;height:30px;padding:0 20px}
+
+.Button__medium___1lEzX{font-size:16px;height:40px;padding:0 30px}
+
+.Button__large___P7_Ru{font-size:18px;height:60px;padding:0 50px}
+
+.Button__contained___2OTDv{color:#fff}
+
+.Button__contained___2OTDv.Button__royal-blue___7wsQT{background-color:#1F6AB0;transition:background-color .2s}
+
+.Button__contained___2OTDv.Button__royal-blue___7wsQT:hover{background-color:#2377c6}
+
+.Button__contained___2OTDv.Button__dark-navy___2U7P9{background-color:#022435;transition:background-color .2s}
+
+.Button__contained___2OTDv.Button__dark-navy___2U7P9:hover{background-color:#03354e}
+
+.Button__contained___2OTDv.Button__emerald___1HuKo{background-color:#056037;transition:background-color .2s}
+
+.Button__contained___2OTDv.Button__emerald___1HuKo:hover{background-color:#067845}
+
+.Button__outlined___1Mae5{background-color:#fff;transition:background-color .2s}
+
+.Button__outlined___1Mae5.Button__royal-blue___7wsQT{border:1px solid #1F6AB0;color:#1F6AB0}
+
+.Button__outlined___1Mae5.Button__dark-navy___2U7P9{border:1px solid #022435;color:#022435}
+
+.Button__outlined___1Mae5.Button__emerald___1HuKo{border:1px solid #056037;color:#056037}
+
+.Button__outlined___1Mae5:hover{background-color:#f2f2f2}

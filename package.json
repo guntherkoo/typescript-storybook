@@ -5,9 +5,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 -c .storybook",
     "scaffold": "cd generator && node component-generator/scaffold_component.js",
-    "build": "rm -rf ./dist && gulp dist",
-    "styles": "gulp styles",
     "storybook-build": "build-storybook -c .storybook -o ./dist/my-component/storybook/",
+    "build": "rm -rf ./dist && gulp dist",
     "chromatic": "npx chromatic --project-token 9f6db47801ae"
   },
   "dependencies": {

@@ -4,7 +4,7 @@ import Button, {
 	ColorStates,
 	VariantStates,
 	SizeStates,
-} from 'components/common/button';
+} from '../button';
 
 import _styles from './Stepper.scss';
 

@@ -62,7 +62,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 Button.defaultProps = {
-	size: SizeStates.MEDIUM,
+	size: SizeStates.LARGE,
 	color: ColorStates.DARK_NAVY,
 	variant: VariantStates.CONTAINED,
 }

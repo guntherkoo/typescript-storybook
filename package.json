@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "scaffold": "cd generator && node component-generator/scaffold_component.js"
+    "scaffold": "cd generator && node component-generator/scaffold_component.js",
+    "storybook-build": "build-storybook -c .storybook -o ./dist/my-component/storybook/",
+    "chromatic": "npx chromatic --project-token 9f6db47801ae"
   },
   "dependencies": {
     "next": "10.0.5",
@@ -29,6 +31,7 @@
     "babel-plugin-inline-react-svg": "^1.1.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-preset-react-app": "^10.0.0",
+    "chromatic": "^5.6.3",
     "classnames": "^2.2.6",
     "css-loader": "^2.1.1",
     "gulp-rename": "^2.0.0",

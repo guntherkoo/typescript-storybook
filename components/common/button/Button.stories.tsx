@@ -33,7 +33,7 @@ storiesOf('common/button', module)
 				ariaLabel={text('aria-label', 'Contained Button')}
 				color={select('color', ColorStates, ColorStates.ROYAL_BLUE)}
 				variant={select('variant', VariantStates, VariantStates.CONTAINED)}
-				size={select('size', SizeStates, SizeStates.SMALL)}
+				size={select('size', SizeStates, SizeStates.LARGE)}
 				onClick={() => handleOnClick()}
 			/>
 		);
